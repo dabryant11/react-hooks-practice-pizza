@@ -1,8 +1,11 @@
 import React from "react";
 
 function PizzaForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
-    <form onSubmit={null /*handle that submit*/}>
+    <form onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="col-5">
           <input
